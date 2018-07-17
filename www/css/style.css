@@ -1,1 +1,49 @@
 /* Empty. Add your own CSS if you like */
+#map-canvas {
+    width: 100%;
+    overflow: hidden;
+    border-bottom: 1px solid #EEE !important;
+    z-index: 9999;
+    background: #ccc;
+}
+
+.bottom-section {
+    background: #999;
+    height: 65%;
+    width: 100%;
+}
+
+#home ion-content{
+    display: flex;
+    display:-webkit-flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.map-button-left {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    font-size: 20px;
+    opacity: 0.8;
+    padding: 2px 7px;
+    min-height: 30px;
+    min-width: 30px;
+    line-height: 22px;
+    text-align: center;
+}
+
+/* Fixes Side Menu compatibility issue with Google Maps Plugin */
+.menu {
+  transform: translateX(-275px);
+  -webkit-transition: -webkit-transform 200ms ease;
+  transition: transform 200ms ease;
+}
+
+.menu-open .menu {
+    transform: translateX(0px);
+    -webkit-transition: -webkit-transform 200ms ease;
+    transition: transform 200ms ease;
+}
+/* End Fix */

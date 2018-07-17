@@ -7,5 +7,23 @@
     "gulp-clean-css": "^3.7.0",
     "gulp-rename": "^1.2.0",
     "gulp-sass": "^3.1.0"
+  },
+  "dependencies": {
+    "cordova-ios": "4.5.4",
+    "cordova-plugin-googlemaps": "^2.3.6",
+    "cordova-plugin-googlemaps-sdk": "git+https://github.com/mapsplugin/cordova-plugin-googlemaps-sdk.git#2.7.0",
+    "ionic-native": "^2.9.0",
+    "minimist": "^1.2.0",
+    "xml2js": "^0.4.19"
+  },
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-googlemaps": {
+        "API_KEY_FOR_ANDROID": "AIzaSyB_Kzy4YWMqLunZN-5yZ-u_2AmDEMEkE-w",
+        "API_KEY_FOR_IOS": "AIzaSyDXhzOU3rtiahfVtSAvdGJfyCXoonnROBA",
+        "LOCATION_WHEN_IN_USE_DESCRIPTION": "This app wants to get your location while this app runs only.",
+        "LOCATION_ALWAYS_USAGE_DESCRIPTION": "This app wants to get your location always, even this app runs in background."
+      }
+    }
   }
 }
